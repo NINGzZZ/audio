@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>播放器</title>
+    <link rel="stylesheet" href="MP3.css">
+    <style>
+        audio {
+            display: block;
+        }
+        span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div id="player">
+    <div class="current">彩虹</div>
+    <audio id="id-audio-player" data-id=0 src="audio/彩虹.mp3" controls ></audio>
+    <div class="controllers">
+        <button id="id-button-play">play</button>
+        <button id="id-button-pause">pause</button>
+        <button id="id-button-next">next</button>
+        <button id="id-button-rethis">single</button>
+        <button id="id-button-relist">list</button>
+        <button id="id-button-random">random</button>
+    </div>
+    <div class="time">
+        <span id="id-span-current"></span>
+        <span id="id-span-duration"></span>
+    </div>
+    <div id="id-div-music">
+        <div class="music" data-id=0 data-path="audio/彩虹.mp3">彩虹</div>
+        <div class="music" data-id=1 data-path="audio/轨迹.mp3">轨迹</div>
+        <div class="music" data-id=2 data-path="audio/红尘客栈.mp3">红尘客栈</div>
+        <div class="music" data-id=3 data-path="audio/回到过去.mp3">回到过去</div>
+        <div class="music" data-id=4 data-path="audio/七里香.mp3">七里香</div>
+        <div class="music" data-id=5 data-path="audio/晴天.mp3">晴天</div>
+        <div class="music" data-id=6 data-path="audio/甜甜的.mp3">甜甜的</div>
+        <div class="music" data-id=7 data-path="audio/退后.mp3">退后</div>
+        <div class="music" data-id=8 data-path="audio/蜗牛.mp3">蜗牛</div>
+        <div class="music" data-id=9 data-path="audio/以父之名.mp3">以父之名</div>
+    </div>
+</div>
+
+<script src="music.js"></script>
+</body>
+</html>
